@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+</head>
+<link rel="stylesheet" href="bootstrap.min.css">
+
+<body>
+    
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid text-center">
+            <h1 class=" navbar-brand m-auto">CurdAlumnos</h1>
+        </div>
+    </nav>
+
+
+      <center> 
+    <body >
+      
+        <br><br><br>
+        <button type="button" class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#agregarR"0>Agregar
+        </button>
+        
+        <div class="modal fade" id="agregarR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 " id="exampleModalLabel"> Alumnos</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                
+                <br><br>
+                
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="form-control text-centr">
+                <br><br>
+
+                <label for="ap">ApellidoPaterno</label>
+                <input type="text" id="ap" class="form-control text-centr">
+                <br><br>
+
+                <label for="am">ApellidoMaterno</label>
+                <input type="text" id="am" class="form-control text-centr">
+                <br><br>
+
+                <label for="g">Grupo</label>
+                <select name="grupo" id="g" class="form-select text-centr">
+                  <option value="401">401</option>
+                  <option value="402">402</option>
+                  <option value="403">403</option>
+                  <option value="405">405</option>
+                </select>
+                <br><br>
+
+      
+                <label for="c">Carrera</label>
+                <select name="carrera" id="c" class="for-select text-centr">
+                  <option value="Ventas">Ventas</option>
+                  <option value="Programación">Programación</option>
+                  <option value="Máquinas">Máquinas</option>
+                </select>
+              </div>
+              
+              
+              
+              <div class="modal-footer">
+                <button type="button" id="borrar" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" id="guardar" class="btn btn-success" data-bs-dismiss="modal" aria-label="close">
+                  <i class="fas fa-save mx-2"></i> Guardar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+        <div id="res"></div>
+          
+        
+    
+    <div class="modal fade" id="actualizarR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Actualizar</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            
+            
+            
+            
+            
+            
+            
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nom" class="form-control  text-center">
+            <br><br>
+
+            <label for="ap">ApellidoPaterno</label>
+            <input type="text" id="apa" class="form-control  text-center">
+            <br><br>
+
+            <label for="am">ApellidoMaterno</label>
+            <input type="text" id="ama" class="form-control  text-center">
+            <br><br>
+
+            <label for="g">Grupo</label>
+            <select name="grupo" id="gr" class="form-select text-center">
+              <option value="401">401</option>
+              <option value="402">402</option>
+        <option value="403">403</option>
+    <option value="405">405</option>
+            </select>
+            <br><br>
+
+            <label for="c">Carrera</label>
+            <select name="carrera" id="ca" class="form-select text-center">
+              <option value="Ventas">Ventas</option>
+              <option value="Programación">Programación</option>
+              <option value="Máquinas y Herramientas">Máquinas</option>
+            </select>
+            
+    
+    
+    
+    
+    
+          </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+              
+              <button type="button" id="actualizar" class="btn btn-success" data-bs-dismiss="modal">
+                Actualizar
+            </button>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </center>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+    </body>
+    </body>
+    </html>
